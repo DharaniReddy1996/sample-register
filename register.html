@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel='stylesheet' href='register.css' type='text/css' />
-    <style></style>
+
 </head>
 
 <body>
@@ -21,16 +21,17 @@
             </ul>
         </div>
     </div>
+
     <div class="container">
 
-        <form action="#">
+        <form action="#" name="register" onsubmit="return validate();">
             <fieldset class="form-group">
                 <div class="row">
                     <div class="col-md-2">
                         <label>Name</label>
                     </div>
                     <div class="col-md-4">
-                        <input type="text" class="form-control" name="firstname" placeholder="First name" required>
+                        <input type="text" class="form-control" name="fname" placeholder="First name">
                     </div>
                 </div>
             </fieldset>
@@ -41,7 +42,7 @@
                         <label>Password</label>
                     </div>
                     <div class="col-md-4">
-                        <input type="password" class="form-control" name="password" placeholder="password" required>
+                        <input type="password" class="form-control" name="password" placeholder="password">
                     </div>
                 </div>
             </fieldset>
@@ -52,7 +53,7 @@
                         <label>Email</label>
                     </div>
                     <div class="col-md-4">
-                        <input type="text" class="form-control" name="email" placeholder="email" required>
+                        <input type="email" class="form-control" name="email" placeholder="email">
                     </div>
                 </div>
             </fieldset>
@@ -63,8 +64,7 @@
                         <label>MobileNumber</label>
                     </div>
                     <div class="col-md-4">
-                        <input type="text" class="form-control" name="mobileNumber" placeholder="mobile Number"
-                            required>
+                        <input type="text" class="form-control" name="mobile" placeholder="mobile Number">
                     </div>
                 </div>
             </fieldset>
@@ -75,7 +75,7 @@
                         <label>date of birth</label>
                     </div>
                     <div class="col-md-4">
-                        <input type="date" class="form-control" name="dateOfBirth" placeholder="date of birth" required>
+                        <input type="date" class="form-control" name="dateOfBirth" placeholder="date of birth">
                     </div>
                 </div>
             </fieldset>
@@ -97,14 +97,30 @@
                         <label>Blood Group</label>
                     </div>
                     <div class="col-md-4">
-                        <input type="text" class="form-control" name="blood" placeholder="Blood Group" required>
+                        <input type="text" class="form-control" name="blood" placeholder="Blood Group">
                     </div>
                 </div>
             </fieldset>
 
+            <fieldset class="form-group">
+                <div class="row">
+                    <div class="col-md-2">
+                        <label for="myfile">Select a file:</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="file" id="myfile" name="myfile"><br><br>
+                    </div>
+                </div>
+            </fieldset>
+
+
             <input type="submit" value="submit">
         </form>
     </div>
+
+    <script type="text/javascript" src="register.js">
+        
+    </script>
 </body>
 
 </html>
