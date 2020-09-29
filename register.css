@@ -16,3 +16,12 @@ height: auto; */
 {
     margin-top: 20px;
 }
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: lighter;
+}
